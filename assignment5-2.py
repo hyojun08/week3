@@ -1,7 +1,5 @@
 import time
 import random
-import sys
-sys.setrecursionlimit(10000)
 def seqsearch(nbrs, target):
     for i in range(0, len(nbrs)):
         if (target == nbrs[i]):
