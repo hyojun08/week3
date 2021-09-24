@@ -11,8 +11,8 @@ def seqsearch(nbrs, target):
 
 def recbinsearch(L, l, u, target): # 범위, 시작, 끝, 값
     mid = (l + u) //2
-    if L[mid] == target:
-        return mid
+    if l > u:
+        return -1
     elif L[mid] > target:
         return recbinsearch(L, l, mid-1, target)
     elif L[mid] < target:
